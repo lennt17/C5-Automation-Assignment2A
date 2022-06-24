@@ -30,7 +30,7 @@ public class simpleTest {
     }
 
     @Test
-    public void Test01_postRequest() {
+    public void Test01_createProject() {
         Response res = given()
                 .contentType(ContentType.JSON)
                 .headers("authorization", "Bearer " + "f15f9ca2b7d9cbe3be967b58681e9b3c0a8d1f0c")
@@ -61,7 +61,7 @@ public class simpleTest {
     }
 
     @Test
-    public void Test03_putRequest() {
+    public void Test03_updateProject() {
         final String GET_PROJECT = "/2293619235";
         Response response = given()
                 .header("authorization", "Bearer " + "f15f9ca2b7d9cbe3be967b58681e9b3c0a8d1f0c")
