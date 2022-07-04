@@ -1,17 +1,9 @@
 package listener;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
 import org.testng.ITestNGListener;
 import org.testng.annotations.*;
-import org.slf4j.Logger;
 
 import java.io.File;
-import java.util.HashMap;
-import java.util.Map;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -20,42 +12,22 @@ import org.testng.ITestResult;
 
 import io.qameta.allure.Attachment;
 import utils.configs.ConfigSettings;
-
-import static io.restassured.RestAssured.basePath;
-import static io.restassured.RestAssured.given;
+import variable.Token;
 
 public class TestNGListener implements ITestNGListener {
     private ConfigSettings configSettings;
+    public Token token;
     protected String accessToken;
-    Gson g = new Gson();
-
-    Map<String, Object> mapLogin = new HashMap<>();
 
     public TestNGListener() {
         configSettings = new ConfigSettings(System.getProperty("user.dir"));
-        this.accessToken = accessToken;
+        this.token = new Token();
     }
 
     @BeforeTest
     public void beforeTest() {
         deleteFileFromDirectory();
-
-        RestAssured.baseURI = "https://todoist.com/API/v8.7/user/login";
-        mapLogin.put("email", "lennt2k@gmail.com");
-        mapLogin.put("password", "Len181403032");
-        Response res = given()
-                .contentType(ContentType.JSON)
-                .and()
-                .body(mapLogin)
-                .when()
-                .post()
-                .then()
-                .extract().response();
-        res.prettyPrint();
-        Object response = res.as(Object.class);
-        String a = g.toJson(response);
-        JsonObject j = g.fromJson(a, JsonObject.class);
-        accessToken = (j.get("token")).getAsString();
+        accessToken = token.getToken();
     }
 
     private static String getTestMethodName(ITestResult iTestResult) {
