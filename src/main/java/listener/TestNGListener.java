@@ -12,22 +12,17 @@ import org.testng.ITestResult;
 
 import io.qameta.allure.Attachment;
 import utils.configs.ConfigSettings;
-import variable.Token;
 
 public class TestNGListener implements ITestNGListener {
     private ConfigSettings configSettings;
-    public Token token;
-    protected String accessToken;
 
     public TestNGListener() {
         configSettings = new ConfigSettings(System.getProperty("user.dir"));
-        this.token = new Token();
     }
 
     @BeforeTest
     public void beforeTest() {
         deleteFileFromDirectory();
-        accessToken = token.getToken();
     }
 
     private static String getTestMethodName(ITestResult iTestResult) {
