@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-04T16:11:21 ICT" name="Surefire suite" finished-at="2022-07-04T16:11:32 ICT" duration-ms="10357">
+  <suite started-at="2022-07-04T16:59:22 ICT" name="Surefire suite" finished-at="2022-07-04T16:59:34 ICT" duration-ms="11933">
     <groups>
     </groups>
-    <test started-at="2022-07-04T16:11:21 ICT" name="Surefire test" finished-at="2022-07-04T16:11:32 ICT" duration-ms="10357">
+    <test started-at="2022-07-04T16:59:22 ICT" name="Surefire test" finished-at="2022-07-04T16:59:34 ICT" duration-ms="11933">
       <class name="simpleTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:simpleTest@29f85fe1]" started-at="2022-07-04T16:11:21 ICT" name="beforeTest" finished-at="2022-07-04T16:11:21 ICT" duration-ms="64" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:simpleTest@73d3e555]" started-at="2022-07-04T16:59:22 ICT" name="beforeTest" finished-at="2022-07-04T16:59:22 ICT" duration-ms="62" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="Test01_createProject()[pri:0, instance:simpleTest@29f85fe1]" started-at="2022-07-04T16:11:21 ICT" name="Test01_createProject" description="Create project" finished-at="2022-07-04T16:11:28 ICT" duration-ms="6692" status="PASS">
+        <test-method signature="Test01_createProject()[pri:0, instance:simpleTest@73d3e555]" started-at="2022-07-04T16:59:22 ICT" name="Test01_createProject" description="Create project" finished-at="2022-07-04T16:59:31 ICT" duration-ms="8439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test01_createProject -->
-        <test-method signature="Test02_getProject()[pri:0, instance:simpleTest@29f85fe1]" started-at="2022-07-04T16:11:28 ICT" name="Test02_getProject" description="Get a project" finished-at="2022-07-04T16:11:29 ICT" duration-ms="899" status="PASS">
+        <test-method signature="Test02_getProject()[pri:0, instance:simpleTest@73d3e555]" started-at="2022-07-04T16:59:31 ICT" name="Test02_getProject" description="Get a project" finished-at="2022-07-04T16:59:32 ICT" duration-ms="670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test02_getProject -->
-        <test-method signature="Test03_updateProject()[pri:0, instance:simpleTest@29f85fe1]" started-at="2022-07-04T16:11:29 ICT" name="Test03_updateProject" description="Update project" finished-at="2022-07-04T16:11:31 ICT" duration-ms="1748" status="PASS">
+        <test-method signature="Test03_updateProject()[pri:0, instance:simpleTest@73d3e555]" started-at="2022-07-04T16:59:32 ICT" name="Test03_updateProject" description="Update project" finished-at="2022-07-04T16:59:34 ICT" duration-ms="1843" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test03_updateProject -->
-        <test-method signature="Test04_getAllProjects()[pri:0, instance:simpleTest@29f85fe1]" started-at="2022-07-04T16:11:31 ICT" name="Test04_getAllProjects" description="Get all project" finished-at="2022-07-04T16:11:32 ICT" duration-ms="613" status="PASS">
+        <test-method signature="Test04_getAllProjects()[pri:0, instance:simpleTest@73d3e555]" started-at="2022-07-04T16:59:34 ICT" name="Test04_getAllProjects" description="Get all project" finished-at="2022-07-04T16:59:34 ICT" duration-ms="539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test04_getAllProjects -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:simpleTest@29f85fe1]" started-at="2022-07-04T16:11:32 ICT" name="afterTest" finished-at="2022-07-04T16:11:32 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:simpleTest@73d3e555]" started-at="2022-07-04T16:59:34 ICT" name="afterTest" finished-at="2022-07-04T16:59:34 ICT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

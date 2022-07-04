@@ -14,8 +14,6 @@ import static io.restassured.RestAssured.given;
 
 public class Token {
     public String accessToken;
-    String email = "lennt2k@gmail.com";
-    String password = "Len181403032";
 
     public ConfigSettings configSettings;
 
@@ -28,6 +26,8 @@ public class Token {
 
     public String getToken(){
         RestAssured.baseURI = configSettings.getBaseURIToken();
+        String email = configSettings.getEmail();
+        String password =configSettings.getPassword();
         mapLogin.put("email", email);
         mapLogin.put("password", password);
         Response res = given()
